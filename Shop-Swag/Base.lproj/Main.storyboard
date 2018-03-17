@@ -1,24 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E0L-m9-pGa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--CODERSWAG-->
+        <scene sceneID="eQI-rM-g4u">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="C80-H5-wgG" customClass="CategoryTableViewController" customModule="Shop_Swag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="hsH-lU-6c5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="SHOP BY CATEGORY " id="DXn-9q-Nvq">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CategoryIdentifier" rowHeight="136" id="fDu-30-IAO" customClass="CategoryTableViewCell" customModule="Shop_Swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDu-30-IAO" id="2yb-35-OzM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhC-58-rV9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="qJV-Ln-P4W">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwm-Wf-T3c">
+                                                            <rect key="frame" x="154.5" y="54" width="67.5" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qJV-Ln-P4W" firstAttribute="leading" secondItem="VhC-58-rV9" secondAttribute="leading" id="BmQ-CH-ffw"/>
+                                                        <constraint firstItem="Wwm-Wf-T3c" firstAttribute="centerY" secondItem="VhC-58-rV9" secondAttribute="centerY" id="Flm-fA-SdY"/>
+                                                        <constraint firstItem="qJV-Ln-P4W" firstAttribute="top" secondItem="VhC-58-rV9" secondAttribute="top" id="G7M-Co-CNe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qJV-Ln-P4W" secondAttribute="bottom" id="MsY-Ow-yof"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qJV-Ln-P4W" secondAttribute="trailing" id="eN1-nX-L4S"/>
+                                                        <constraint firstItem="Wwm-Wf-T3c" firstAttribute="centerX" secondItem="VhC-58-rV9" secondAttribute="centerX" id="koj-RE-0XT"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="VhC-58-rV9" secondAttribute="trailing" id="Hpt-Vt-r9L"/>
+                                                <constraint firstItem="VhC-58-rV9" firstAttribute="top" secondItem="2yb-35-OzM" secondAttribute="top" id="SGk-F0-hSA"/>
+                                                <constraint firstAttribute="bottom" secondItem="VhC-58-rV9" secondAttribute="bottom" id="b8N-mI-GcB"/>
+                                                <constraint firstItem="VhC-58-rV9" firstAttribute="leading" secondItem="2yb-35-OzM" secondAttribute="leading" id="tQn-9n-cec"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6XL-kg-FdL" kind="show" id="Wic-5o-xNi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="C80-H5-wgG" id="GOg-6u-RJj"/>
+                            <outlet property="delegate" destination="C80-H5-wgG" id="OHb-ac-c3j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CODERSWAG" id="GHw-QG-oMF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTZ-KN-TcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-324" y="-95.802098950524751"/>
+        </scene>
+        <!--CODERSWAG-->
+        <scene sceneID="lqz-vr-4T7">
+            <objects>
+                <tableViewController id="apg-E7-xdx" customClass="DetailCategoryTableViewController" customModule="Shop_Swag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="F9w-hv-FON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="SHOP BY CATEGORY" id="VCg-nr-rXN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="tNt-Wg-GXm">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tNt-Wg-GXm" id="l8q-wi-Ihc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="apg-E7-xdx" id="bZe-1s-dtJ"/>
+                            <outlet property="delegate" destination="apg-E7-xdx" id="Y9D-Xf-4yd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CODERSWAG" id="Wta-D5-RiJ">
+                        <barButtonItem key="leftBarButtonItem" image="backButton copy" id="FZj-RC-zM6">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woJ-es-rbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488.8" y="-96.7016491754123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="720-ga-qPy">
+            <objects>
+                <navigationController id="6XL-kg-FdL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xVr-Hg-9rs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.32549019607843138" green="0.12549019607843137" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="apg-E7-xdx" kind="relationship" relationship="rootViewController" id="oxY-EJ-OY6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvI-X4-F8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="-96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6EK-a2-fi4">
+            <objects>
+                <navigationController id="E0L-m9-pGa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L9c-Ld-Cmo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.31764705882352939" green="0.12941176470588234" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C80-H5-wgG" kind="relationship" relationship="rootViewController" id="vcW-0o-TnW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxm-sS-81g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1276" y="-95"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backButton copy" width="29" height="24"/>
+        <image name="shirts" width="1024" height="703"/>
+    </resources>
 </document>
